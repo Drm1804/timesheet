@@ -1,35 +1,43 @@
 :host {
     display: block;
+    margin: 0 10px;
 }
 
 .time {
-    overflow: hidden;
+    padding: 10px 0;
 }
+
 .time-item{
+    position: relative;
     float: left;
 }
+
 .time-empty{
     float: left;
 }
+
 .time-stript{
     float: left;
     height: 20px;
     width: 2px;
     background-color: grey;
 }
+
 .time-stript.small{
     margin-top: 10px;
     height: 10px;
 }
+
 .hours-stript {
     box-sizing: border-box;
     display: inline-block;
 
 }
 
-
-.line {
-    height: 5px;
-    width: 100%;
-    background: #b2ebf2;
+.time-o-clock{
+    top: -10px;
+    left: -10px;
+    position: absolute;
+    font-size: 10px;
 }
+

@@ -7,11 +7,13 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { TimeLineComponent } from './time-line/time-line.component';
+import { LineFillComponent } from './time-line/line-fill/line-fill.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TimeLineComponent
+    TimeLineComponent,
+    LineFillComponent
   ],
   imports: [
     BrowserModule,

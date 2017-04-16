@@ -1,0 +1,14 @@
+.line {
+    /*height: 5px;*/
+    width: 100%;
+    clear: both;
+}
+.margin{
+    float: left;
+    height: 15px;
+}
+.fill{
+    height: 15px;
+    float: left;
+    background: #ddbdf1;
+}

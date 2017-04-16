@@ -1,9 +1,18 @@
 <div #time class="time" (window:resize)="onResizeTimeline()">
     <div class="time-item" *ngFor="let entity of stripts; let i = index; let last = last; let odd  = odd">
+        <span class="time-o-clock" *ngIf="calcTime(i)">{{calcTime(i)}}</span>
         <div class="time-stript" [ngClass]="{'small': odd}"></div>
         <div class="time-empty" [ngStyle]="{ 'width': striptVoid + 'px'}" *ngIf="!last"></div>
     </div>
 </div>
-<div class="line">
+<div class="clearfix"></div>
+<line-fill
+        *ngFor="let entity of timeEntities; let i = index;"
+        [timeFrame]="timeFrame"
+        [entity]="entity" [timeIntervalWidth]="striptVoid + 2">   <!--todo rewrite-->
 
-</div>
+</line-fill>
+
+<!--<ul>-->
+    <!--<li >{{entity | json}}</li>-->
+<!--</ul>-->

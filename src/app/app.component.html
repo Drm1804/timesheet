@@ -1,25 +1,4 @@
-<ul>
-  <li *ngFor="let entity of timeEntities; let i = index; ">{{entity | json}}</li>
-</ul>
+<time-line [timeEntities]="timeEntities"></time-line>
+<br>
+<textarea name="" id="" cols="30" rows="10" style="width: 100%;" [(ngModel)]="times" (ngModelChange)="parseData($event)"></textarea>
 
-<time-line></time-line>
-
-<textarea name="" id="" cols="30" rows="10" [(ngModel)]="times" (ngModelChange)="parseData($event)"></textarea>
-
-
-<!--<md-grid-list cols="4" rowHeight="100px">-->
-  <!--<md-grid-tile colspan="3" rowspan="1">1</md-grid-tile>-->
-  <!--<md-grid-tile colspan="3" rowspan="1">2</md-grid-tile>-->
-  <!--<md-grid-tile colspan="3" rowspan="1">3</md-grid-tile>-->
-<!--</md-grid-list>-->
-
-
-<md-grid-list cols="4" rowHeight="100px">
-  <md-grid-tile
-          *ngFor="let tile of tiles"
-          [colspan]="tile.cols"
-          [rowspan]="tile.rows"
-          [style.background]="tile.color">
-    {{tile.text}}
-  </md-grid-tile>
-</md-grid-list>
