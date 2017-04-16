@@ -1,0 +1,9 @@
+<div #time class="time" (window:resize)="onResizeTimeline()">
+    <div class="time-item" *ngFor="let entity of stripts; let i = index; let last = last; let odd  = odd">
+        <div class="time-stript" [ngClass]="{'small': odd}"></div>
+        <div class="time-empty" [ngStyle]="{ 'width': striptVoid + 'px'}" *ngIf="!last"></div>
+    </div>
+</div>
+<div class="line">
+
+</div>

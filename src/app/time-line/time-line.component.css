@@ -1,0 +1,35 @@
+:host {
+    display: block;
+}
+
+.time {
+    overflow: hidden;
+}
+.time-item{
+    float: left;
+}
+.time-empty{
+    float: left;
+}
+.time-stript{
+    float: left;
+    height: 20px;
+    width: 2px;
+    background-color: grey;
+}
+.time-stript.small{
+    margin-top: 10px;
+    height: 10px;
+}
+.hours-stript {
+    box-sizing: border-box;
+    display: inline-block;
+
+}
+
+
+.line {
+    height: 5px;
+    width: 100%;
+    background: #b2ebf2;
+}
