@@ -14,7 +14,6 @@ export class AppComponent {
      constructor(private parser: ParserService) {}
 
     parseData(event:String) {
-         console.log('968687');
         this.timeEntities =  this.parser.prepareInputTimesheet(event);
     }
 }

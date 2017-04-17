@@ -8,18 +8,20 @@ export class ParserService {
 
 
     prepareInputTimesheet(data) {
-        const timesheets: Object[] = [];
-
-        data.split('\n').forEach((el) => {
-            timesheets.push(this._parseEntityTimesheet(el));
-        });
-
-        return timesheets;
+        try {
+            const timesheets: Object[] = [];
+            data.split('\n').forEach((el) => {
+                timesheets.push(this._parseEntityTimesheet(el));
+            });
+            return timesheets;
+        } catch (e) {
+            console.error('Error input data');
+        }
     }
 
     private _parseEntityTimesheet(entity) {
-        const returned:Object = {};
-        const timesheet:any[] = entity.split(',');
+        const returned: Object = {};
+        const timesheet: any[] = entity.split(',');
         returned['data'] = new Date(timesheet[0]);
         returned['timeFrom'] = this._createDateWithTime(timesheet[0], timesheet[1]);
         returned['timeTo'] = this._createDateWithTime(timesheet[0], timesheet[2]);
@@ -28,7 +30,7 @@ export class ParserService {
         return returned;
     }
 
-    private _createDateWithTime(date, time): any{
+    private _createDateWithTime(date, time): any {
         const nd = date.split('-').concat(time.split(':'));
         return new Date(nd[0], nd[1], nd[2], nd[3], nd[4]);
     }
