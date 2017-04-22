@@ -5,6 +5,7 @@ import {HttpModule} from '@angular/http';
 import {MdButtonModule, MdCheckboxModule, MdGridListModule} from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {RouterModule, Routes} from '@angular/router';
+import {MdSidenavModule} from '@angular/material';
 
 import {AppComponent} from './app.component';
 import {TimeLineComponent} from './time-line/time-line.component';
@@ -29,6 +30,7 @@ const appRoutes: Routes = [
         BrowserModule,
         FormsModule,
         HttpModule,
+        MdSidenavModule,
         BrowserAnimationsModule,
         MdButtonModule,
         MdGridListModule,

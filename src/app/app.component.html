@@ -2,4 +2,15 @@
 <!--<br>-->
 <!--<textarea name="" id="" cols="30" rows="10" style="width: 100%;" [(ngModel)]="times" (ngModelChange)="parseData($event)"></textarea>-->
 
-<router-outlet></router-outlet>
+
+
+<md-sidenav-container>
+  <md-sidenav mode="side" opened="true">
+    Time
+  </md-sidenav>
+
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+
+</md-sidenav-container>

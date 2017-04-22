@@ -14,3 +14,14 @@ body{
 .clearfix:after {
      clear: both;
  }
+
+
+md-sidenav{
+    background: pink;
+}
+
+.content{
+    /*overflow: auto;*/
+    overflow: visible;
+
+}
