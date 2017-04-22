@@ -33,10 +33,10 @@ export class TimeLineComponent implements OnInit {
     calcTime(i): string {
         let returned = this.timeFrame.start + i/2;
         if (i % 2 == 0) {
-            if(i/2 < 10){ 
-                return `0${returned}:00`
+            if(i/2 < 10){
+                return `0${returned}:00`;
             } else {
-                return `${returned}:00`
+                return `${returned}:00`;
             }
         }
         return '';

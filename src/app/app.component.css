@@ -1,27 +1,17 @@
-body{
-    margin: 0;
-    padding: 0;
+:host{
+  height: 100%;
+  display: block;
+}
+md-sidenav-container{
+  height: 100%;
+}
+md-sidenav {
+  background: pink;
+  width: 200px;
 }
 
-.clearfix {
-    *zoom: 1;
-}
-.clearfix:before,
-.clearfix:after {
-     display: table;
-     content: "";
- }
-.clearfix:after {
-     clear: both;
- }
-
-
-md-sidenav{
-    background: pink;
-}
-
-.content{
-    /*overflow: auto;*/
-    overflow: visible;
+.content {
+  /*overflow: auto;*/
+  overflow: visible;
 
 }
