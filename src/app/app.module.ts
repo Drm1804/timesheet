@@ -10,6 +10,7 @@ import {AppComponent} from './app.component';
 import {TimeLineComponent} from './time-line/time-line.component';
 import {LineFillComponent} from './time-line/line-fill/line-fill.component';
 import {TimerComponent} from './timer/timer.component';
+import { TimeAgoPipe } from './timer/time-ago.pipe';
 
 const appRoutes: Routes = [
   {path: 'timeline', component: TimeLineComponent},
@@ -25,7 +26,8 @@ const appRoutes: Routes = [
     AppComponent,
     TimeLineComponent,
     LineFillComponent,
-    TimerComponent
+    TimerComponent,
+    TimeAgoPipe
   ],
   imports: [
     BrowserModule,

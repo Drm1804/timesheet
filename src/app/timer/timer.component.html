@@ -10,9 +10,12 @@
     </md-input-container>
   </md-grid-tile>
   <md-grid-tile [colspan]="1">
-    <h1> 0:00:00</h1>
+    <h1> {{timerData.delta | timeAgo}}</h1>
   </md-grid-tile>
   <md-grid-tile [colspan]="1">
-     <button md-mini-fab><md-icon>play_arrow</md-icon></button>
+     <button md-mini-fab (click)="toggleTimer()">
+       <md-icon *ngIf="!timerData.isStart">play_arrow</md-icon>
+       <md-icon *ngIf="timerData.isStart">stop</md-icon>
+     </button>
   </md-grid-tile>
 </md-grid-list>
