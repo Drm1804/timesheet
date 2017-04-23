@@ -11,9 +11,11 @@ import {TimeLineComponent} from './time-line/time-line.component';
 import {LineFillComponent} from './time-line/line-fill/line-fill.component';
 import {TimerComponent} from './timer/timer.component';
 import { TimeAgoPipe } from './timer/time-ago.pipe';
+import { CheckTimesheetComponent } from './check-timesheet/check-timesheet.component';
 
 const appRoutes: Routes = [
   {path: 'timeline', component: TimeLineComponent},
+  {path: 'check', component: CheckTimesheetComponent},
   {
     path: '',
     redirectTo: '/timeline',
@@ -27,7 +29,8 @@ const appRoutes: Routes = [
     TimeLineComponent,
     LineFillComponent,
     TimerComponent,
-    TimeAgoPipe
+    TimeAgoPipe,
+    CheckTimesheetComponent
   ],
   imports: [
     BrowserModule,

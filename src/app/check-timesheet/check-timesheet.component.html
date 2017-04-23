@@ -1,0 +1,17 @@
+<div class="tl">
+  <div class="small-tl-col">
+    <p>Statistic about your timesheet:</p>
+    <p *ngIf="timeInfo.spentTime">Spent time: {{timeInfo.spentTime | timeAgo}}</p>
+    <p>Queues:
+      <span *ngFor="let item of timeInfo.queueList; let last = last">{{item}}<span *ngIf="!last">, </span></span>
+    </p>
+  </div>
+  <div class="big-tl-col">
+    <time-line [timeEntities]="timeEntities"></time-line>
+  </div>
+</div>
+
+
+
+<br>
+<textarea name="" id="" cols="30" rows="10" style="width: 100%;" [(ngModel)]="times" (ngModelChange)="parseData($event)"></textarea>

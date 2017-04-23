@@ -1,17 +1,15 @@
-<!--<time-line [timeEntities]="timeEntities"></time-line>-->
-<!--<br>-->
-<!--<textarea name="" id="" cols="30" rows="10" style="width: 100%;" [(ngModel)]="times" (ngModelChange)="parseData($event)"></textarea>-->
-
-
-
 <md-sidenav-container>
   <md-sidenav mode="side" opened="true">
-    Timesheet
+    <p style="text-align: center;">
+      Timesheet
+    </p>
+    <ul>
+      <li><a routerLink="check">Check your timesheet</a></li>
+    </ul>
   </md-sidenav>
 
   <div class="content">
     <app-timer></app-timer>
     <router-outlet></router-outlet>
   </div>
-
 </md-sidenav-container>

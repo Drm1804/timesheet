@@ -1,0 +1,22 @@
+:host {
+  padding: 10px;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+}
+
+.tl{
+  font-size: 0;
+}
+.small-tl-col{
+  font-size: 1rem;
+  display: inline-block;
+  width: 20%;
+  vertical-align: top;
+}
+
+.big-tl-col {
+  display: inline-block;
+  width: 80%;
+  vertical-align: top;
+}
