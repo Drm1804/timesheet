@@ -18,7 +18,7 @@ const appRoutes: Routes = [
   {path: 'check', component: CheckTimesheetComponent},
   {
     path: '',
-    redirectTo: '/timeline',
+    redirectTo: 'check',
     pathMatch: 'full'
   },
 ];

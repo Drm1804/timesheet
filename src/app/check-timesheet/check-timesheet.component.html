@@ -2,7 +2,7 @@
   <div class="small-tl-col">
     <p>Statistic about your timesheet:</p>
     <p *ngIf="timeInfo.spentTime">Spent time: {{timeInfo.spentTime | timeAgo}}</p>
-    <p>Queues:
+    <p *ngIf="timeInfo.queueList">Queues:
       <span *ngFor="let item of timeInfo.queueList; let last = last">{{item}}<span *ngIf="!last">, </span></span>
     </p>
   </div>
